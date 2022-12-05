@@ -1,0 +1,124 @@
+<DOCTYPE html>
+
+    <head>
+        <title>Cadastro</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Playfair+Display:ital,wght@1,500&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Kanit:wght@300&family=Playfair+Display:ital,wght@1,500&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Kanit:wght@300&family=Playfair+Display:ital,wght@1,500&family=Raleway:ital,wght@1,200&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    </head>
+
+    <body id="index">
+        <table cellpadding="40px" class="table1" style="color: rgb(191, 117, 228);">
+            <tr id="letras">
+                <td id="menu"><a style="color: rgb(245, 210, 245);" href="index.html">Home</a></td>
+                <td id="menu"><a style="color: rgb(245, 210, 245);" href="log.html">Logaritmos</a></td>
+                <td id="menu"><a style="color: rgb(245, 210, 245);" href="funlog.html">Funções Logarítmicas</a></td>
+                <td id="menu"><a style="color: rgb(245, 210, 245);" href="financeira.html">Matématica Finaceira</a></td>
+                <td id="menu"><a style="color: rgb(245, 210, 245);" href="cadastrar.html">Cadastre-se em nosso EAD!</a>
+                </td>
+                <td id="menu"><a style="color: rgb(245, 210, 245);" href="contato.html">Contato</a></td>
+                <td id="menu"><a style="color: rgb(245, 210, 245);" href="autoavaliacao.html">Auto-Avaliação</a></td>
+            </tr>
+        </table>
+        <br>
+        <h2>
+            Cadastre-se no EAD de Matemática, curso com certificado!
+        </h2>
+        <br>
+        <form action="teste.php" method="GET" id="formulario">
+            <label>
+                <div>
+                    <div class="bordinha">
+                        <p>Nome Completo:</p>
+                        <input type="text" name="name" placeholder="Digite seu nome completo" minlength="10"
+                            maxlength="200" required="required">
+            </label>
+            <br>
+            <br>
+            <label>
+                <p>Data de Nascimento:</p>
+                <input type="date" name="data" required="required">
+            </label>
+            <br>
+            <br>
+            <label>
+                <p>E-mail:</p>
+                <input type="email" name="email" placeholder="Digite seu E-mail" required="required">
+            </label>
+            <br>
+            <br>
+            <label>
+                <p>Telefone para contato:</p>
+                <input type="number" name="telefone" placeholder="Digite seu telefone" required="required">
+            </label>
+            <br>
+
+            <br>
+            <fieldset>
+                <legend>
+                    <p>Sexo:</p>
+                </legend>
+                <input id="feminino" type="radio" name="genero" value="F" required="required">
+                <label for="feminino">Feminino</label>
+                <input id="masculino" type="radio" name="genero" value="M" required="required">
+                <label for="maculino">Masculino</label>
+                <input id="fluido" type="radio" name="genero" value="G" required="required">
+                <label for="fluido">Genero Fluido</label>
+            </fieldset>
+            <br>
+            <br>
+            <label>
+                <p>Cidade:</p>
+                <select name='cidade'>
+                    <option value='ere'>Erechim</option>
+                    <option value='poa'>Porto Alegre</option>
+                    <option value='sa'>Santa Rosa</option>
+                    <option value='bc'>Barão de Cotegipe</option>
+                    <option value='vi'>Viamão</option>
+                    <option value='pb'>Paulo Bento</option>
+                    <option value='er'>Entre Rios do Sul</option>
+                    <option value='Outra'>Outra</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label>
+                <legend>
+                    <p>Período:</p>
+                </legend>
+                <br>
+                <input type='checkbox' name='partedodia' value='M'> Manhã
+                <input type='checkbox' name='partedodia' value='T'> Tarde
+                <input type='checkbox' name='partedodia' value='N'> Noite
+            </label>
+            <br>
+            <br>
+            <input id="botao" type="reset" name="b2" value="Limpar">
+            <input id="botao1"type="submit" name="b1" value="Enviar">
+            </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <span class="material-symbols-outlined"><a href="index.html">
+                    home</a>
+            </span>
+    </body>
